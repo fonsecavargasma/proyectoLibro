@@ -1,0 +1,14 @@
+# Habilita el motor de reescritura
+
+RewriteEngine On
+
+# Si la solicitud no comienza con /public/, redirigir a /public/
+
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.\*)$ /public/$1 [L,QSA]
+
+# Proteger el acceso al archivo .htaccess
+
+<Files .htaccess>
+Require all denied
+</Files>
