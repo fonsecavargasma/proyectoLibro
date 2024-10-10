@@ -7,7 +7,7 @@ http://localhost:8080/libros
 Correr en Docker
 Abrir Terminal en proyecto y correr el siguiente comando
 
-# docker-compose up --build -d
+docker-compose up --build -d
 
 Al montar el Docker se creara la Base de datos BDLibros y la tabla libros con un registro de prueba
 
